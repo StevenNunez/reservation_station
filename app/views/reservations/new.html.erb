@@ -1,0 +1,6 @@
+Reserve a table at <%= @restaurant.name %>
+<%= form_for([@restaurant, @reservation]) do |f| %>
+  <%= f.collection_select(:table_id, @restaurant.tables, :id, :id) %>
+  <%= f.collection_select(:client_id, Client.all, :id, :name) %>
+  <%= f.submit %>
+<% end %>
