@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  table_id: 
+  client_id: 
+  time: 2015-03-26 15:11:10
+
+two:
+  table_id: 
+  client_id: 
+  time: 2015-03-26 15:11:10

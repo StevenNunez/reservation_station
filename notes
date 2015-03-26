@@ -1,0 +1,19 @@
+Client
+has_many :reservations
+has_many :tables, through: :reservations
+:name
+
+Restaurant
+has_many :tables
+#has_many :reservations, through: :tables
+:name
+
+Table
+  belongs_to :restaurant
+  has_many :reservations
+  has_many :clients, through: :reservations
+
+Reservation
+  belongs_to :table
+  belongs_to :client
+  :time
